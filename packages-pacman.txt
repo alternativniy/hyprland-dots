@@ -1,0 +1,14 @@
+adw-gtk-theme
+nwg-look
+fish
+fastfetch
+hypridle
+hyprlock
+hyprpaper
+waybar
+rsync
+gnome-control-center
+slurp
+grim
+wl-clipboard
+jdk-openjdk

@@ -1,0 +1,6 @@
+.config/*
+!.config/hypr
+!.config/waybar
+!.config/kitty
+!.config/chrome-flags.conf
+!.config/code-flags.conf
