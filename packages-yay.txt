@@ -1,2 +1,3 @@
 spotify
 visual-studio-code-bin
+rtl8852au-dkms-git
