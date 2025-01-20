@@ -19,3 +19,4 @@ noto-fonts-emoji
 ttf-nerd-fonts-symbols
 os-prober
 polkit-gnome
+nodejs

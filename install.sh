@@ -16,5 +16,7 @@ yes | sudo yay -Sy - < ./packages-yay.txt
 
 yes | cp -r -f .config/* ~/.config/
 
+sudo chown -R $(whoami) /opt/visual-studio-code/
+
 cd ~/
 rm -rf ~/.alttmp
