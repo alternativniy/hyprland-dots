@@ -1,7 +1,10 @@
 adw-gtk-theme
 nwg-look
+rofi
 fish
+foot
 fastfetch
+starship
 hypridle
 hyprlock
 hyprpaper
@@ -14,3 +17,5 @@ wl-clipboard
 jdk-openjdk
 noto-fonts-emoji
 ttf-nerd-fonts-symbols
+os-prober
+polkit-gnome

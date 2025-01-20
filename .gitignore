@@ -2,5 +2,10 @@
 !.config/hypr
 !.config/waybar
 !.config/kitty
+!.config/fish
+!.config/rofi
+!.config/fastfetch
 !.config/chrome-flags.conf
 !.config/code-flags.conf
+!.config/electron-flags.conf
+!.config/spotify-flags.conf
