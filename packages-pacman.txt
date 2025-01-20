@@ -12,3 +12,5 @@ slurp
 grim
 wl-clipboard
 jdk-openjdk
+noto-fonts-emoji
+ttf-nerd-fonts-symbols

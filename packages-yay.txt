@@ -1,3 +1,2 @@
-ags
 spotify
 visual-studio-code-bin
