@@ -1,3 +1,7 @@
+#!/bin/bash
+
+BASEPATH=`pwd`
+
 mkdir ~/.alttmp
 cd ~/.alttmp
 
@@ -8,13 +12,14 @@ then
     sudo pacman -S --needed git base-devel
     git clone https://aur.archlinux.org/yay.git
     cd yay && makepkg -si
-    cd ~/.alttmp
 fi    
 
-yes | sudo pacman -Sy - < ./packages-pacman.txt
-yes | sudo yay -Sy - < ./packages-yay.txt
+cd $BASEPATH
 
-yes | cp -r -f .config/* ~/.config/
+yes | sudo pacman -Sy - < ./packages-pacman.txt
+yes | yay -Sy - < ./packages-yay.txt
+
+yes | cp -r -f ./.config/* ~/.config/
 
 sudo chown -R $(whoami) /opt/visual-studio-code/
 
