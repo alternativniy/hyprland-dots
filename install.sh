@@ -19,9 +19,10 @@ cd $BASEPATH
 yes | sudo pacman -Sy - < ./packages-pacman.txt
 yes | yay -Sy - < ./packages-yay.txt
 
+sudo systemctl enable libvirtd.service
+
 yes | cp -r -f ./.config/* ~/.config/
 
 sudo chown -R $(whoami) /opt/visual-studio-code/
 
-cd ~/
 rm -rf ~/.alttmp
