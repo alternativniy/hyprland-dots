@@ -5,6 +5,9 @@
 !.config/fish
 !.config/rofi
 !.config/fastfetch
+!.config/swaync
+!.config/wlogout
+
 !.config/chrome-flags.conf
 !.config/code-flags.conf
 !.config/electron-flags.conf

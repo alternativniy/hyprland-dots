@@ -47,9 +47,7 @@
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-	"on-click": "sh ~/scripts/rofi-wifi-menu/rofi-wifi-menu.sh"
-	 
+        "format-disconnected": "Disconnected ⚠"
     },
     "cpu": {
         "format": "  {usage}%",
@@ -90,6 +88,10 @@
         "format": "{:%H:%M | %e %B} ",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
+    },
+    "custom/wlogout": {
+        "format": " ",
+        "on-click": "wlogout"
     }
 
 }

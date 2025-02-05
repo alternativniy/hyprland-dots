@@ -23,7 +23,8 @@
         "hyprland/language",
         "battery",
         "battery#bat2",
-        "clock"
+        "clock",
+        "custom/wlogout"
     ],
     //Modules configuration
 

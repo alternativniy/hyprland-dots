@@ -1,28 +1,12 @@
 #!/bin/bash
 
 BASEPATH=`pwd`
+DIST="`hostnamectl | grep 'Transient hostname' | cut -d ':' -f2 | xargs`";
 
-mkdir ~/.alttmp
-cd ~/.alttmp
-
-yes | sudo pacman -Syu
-
-if ! command -v yay 2>&1 >/dev/null
+if [ -e "./dist/${DIST}/install.sh" ]
 then
-    sudo pacman -S --needed git base-devel
-    git clone https://aur.archlinux.org/yay.git
-    cd yay && makepkg -si
-fi    
-
-cd $BASEPATH
-
-yes | sudo pacman -Sy - < ./packages-pacman.txt
-yes | yay -Sy - < ./packages-yay.txt
-
-sudo systemctl enable libvirtd.service
-
-yes | cp -r -f ./.config/* ~/.config/
-
-sudo chown -R $(whoami) /opt/visual-studio-code/
-
-rm -rf ~/.alttmp
+  cd "./dist/${DIST}/";
+  source "./install.sh";
+else
+  echo "Dist ${DIST} not found";
+fi
