@@ -1,6 +1,6 @@
 {
     "custom/arch": {
-        "format": "󰣇",
+        "format": "",
         "tooltip": true,
         "tooltip-format": "btw"
     },
@@ -90,7 +90,8 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "custom/wlogout": {
-        "format": " ",
+        "format": "⏻",
+        "tooltip": false,
         "on-click": "wlogout"
     }
 
