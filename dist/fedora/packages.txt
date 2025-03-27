@@ -19,3 +19,4 @@ qt6ct
 qt6-qtsvg
 wlogout
 SwayNotificationCenter
+zen-browser
