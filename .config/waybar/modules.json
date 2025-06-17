@@ -4,8 +4,6 @@
         "tooltip": true,
         "tooltip-format": "btw"
     },
-
-
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -24,6 +22,14 @@
             "deactivated": ""
         }
     },
+    "custom/spotify": {
+        "exec": "/usr/bin/python3 ~/.config/waybar/custom_modules/mediaplayer.py --player spotify",
+        "format": "{}  ",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
     "pulseaudio": {
         "format": "{icon}  {volume}%",
         "format-bluetooth": "{icon} {volume}%  {format_source}",
@@ -38,7 +44,11 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [
+                "",
+                "",
+                ""
+            ]
         },
         "on-click": "pavucontrol"
     },
@@ -55,7 +65,7 @@
     },
     "memory": {
         "format": "  {}%",
-	"tooltip": true
+        "tooltip": true
     },
     "temperature": {
         "interval": 10,
@@ -65,9 +75,9 @@
         "format": " {temperatureC}°C"
     },
     "hyprland/language": {
-       "format": "  {}",
-       "format-en": "EN",
-       "format-ru": "RU"
+        "format": "  {}",
+        "format-en": "EN",
+        "format-ru": "RU"
     },
     "battery": {
         "states": {
@@ -79,7 +89,13 @@
         "format-charging": "  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{time}  {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "battery#bat2": {
         "bat": "BAT2"
@@ -94,5 +110,4 @@
         "tooltip": false,
         "on-click": "wlogout"
     }
-
 }
